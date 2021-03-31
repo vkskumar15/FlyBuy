@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "157883516036",
+    "project_id": "fly-buy-e8c5b",
+    "storage_bucket": "fly-buy-e8c5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157883516036:android:c48ff24919f877f339aed1",
+        "android_client_info": {
+          "package_name": "com.vikaskumar.flybuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157883516036-mosirl16mjsum05hguuapv3erubdvhlh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyT9TR90UNRXxgJ1XMmKLib548Ju1zzm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157883516036-mosirl16mjsum05hguuapv3erubdvhlh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

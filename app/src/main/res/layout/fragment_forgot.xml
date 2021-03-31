@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ForgotFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/backSignIn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/backnew"
+            tools:ignore="OnClick"
+            android:layout_margin="10dp"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/set_new_password_icon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/update"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/set_new_password_title"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/buenard_bold"
+            android:gravity="center"
+            android:text="Update password"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/set_new_password_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/port_lligat_slab"
+            android:gravity="center"
+            android:text="@string/enter_registered_email_id"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:drawableTint="@color/colorPurple"
+                    android:hint="Your Email"
+                    android:transitionName="username_tran"
+                    app:endIconMode="clear_text"
+                    app:startIconTint="@color/theme"
+                    app:startIconDrawable="@drawable/emailnew">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailForgot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/theme"
+                        android:inputType="textPersonName" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/set_new_password_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="110dp"
+                    android:backgroundTint="@color/theme"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:layout_marginStart="70dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Update"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

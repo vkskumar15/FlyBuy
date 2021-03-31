@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+    <ImageView
+        android:id="@+id/background_img"
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:background="@drawable/background"
+
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="70dp"
+        android:transitionName="logo_image"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="cart.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/elsie_swash_caps"
+        android:text="Fly Buy"
+        android:textColor="#FF1303"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        android:transitionName="logo_text" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="logo_image"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="The Shopping Universe."
+        android:layout_below="@id/textView"
+        android:fontFamily="@font/elsie_swash_caps"
+        android:layout_marginLeft="40dp"
+
+        />
+
+
+
+
+</RelativeLayout>
